@@ -1,0 +1,4 @@
+Microsoft.NET.Test.Sdk
+NFluent
+xunit
+xunit.runner.visualstudio

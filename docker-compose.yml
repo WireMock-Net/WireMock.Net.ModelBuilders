@@ -1,0 +1,5 @@
+version: "3.4"
+services:
+  test-mock:
+    image: sheyenrath/wiremock.net:1.0.4.5
+    entrypoint: ./wiremock-net --Urls http://*:80 --AllowPartialMapping false

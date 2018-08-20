@@ -1,0 +1,5 @@
+version: "3.4"
+services:
+  test-mock:
+    ports:
+      - "5010:80"

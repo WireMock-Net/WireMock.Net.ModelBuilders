@@ -1,0 +1,24 @@
+storage: none
+framework: netstandard2.0, netcoreapp2.1
+source https://api.nuget.org/v3/index.json
+nuget WireMock.Net ~> 1
+nuget Microsoft.NET.Test.Sdk ~> 15
+nuget NFluent ~> 2
+nuget xunit ~> 2
+nuget xunit.runner.visualstudio ~> 2
+
+group build
+    source https://api.nuget.org/v3/index.json
+    clitool fake-cli ~> 5
+    nuget GitVersion.CommandLine ~> 3
+
+group fake
+    storage: none
+    framework: netcoreapp2.0, netstandard2.0
+    source https://api.nuget.org/v3/index.json
+    nuget Fake.Core.Target ~> 5
+    nuget Fake.DotNet.Cli ~> 5
+    nuget Fake.DotNet.Paket ~> 5
+    nuget Fake.IO.FileSystem ~> 5
+    nuget Fake.Tools.Git ~> 5
+    nuget Fake.Tools.GitVersion ~> 5

@@ -1,0 +1,5 @@
+NFluent
+Microsoft.NET.Test.Sdk
+WireMock.Net
+xunit
+xunit.runner.visualstudio

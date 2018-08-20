@@ -1,0 +1,11 @@
+version: "3.4"
+services:
+  integration-tests:
+    build: ./WireMock.Net.ModelBuilders.IntegrationTests
+    image: wiremock-net/modelbuilders-integrationtests:${IMAGE_TAG:-dev}
+    depends_on:
+      - test-mock
+    volumes:
+      - ./test-results:/output
+    environment:
+      WAIT_HOSTS: test-mock:80
